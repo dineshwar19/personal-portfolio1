@@ -99,7 +99,7 @@ const Skills = () => {
             <div className="text-xl font-bold uppercase my-5">Development</div>
             <DiCode size={50} />
           </div>
-          <ul className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 md:px-12 px-0">
+          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-4 md:px-12 px-0">
             {techs.map((tech, index) => (
               <li
                 key={index}
