@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="bg-black relative" id="header">
       <div
-        class="bg-fixed min-h-screen bg-cover bg-no-repeat w-full opacity-30 "
+        class="bg-fixed min-h-screen bg-cover bg-no-repeat opacity-30 "
         style={{ backgroundImage: `url(${imageSrc})` }}
       ></div>
       <div className="text-white flex flex-col items-center justify-center absolute inset-0 mb-28 gap-7">

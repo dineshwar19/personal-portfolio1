@@ -5,7 +5,7 @@ const Passion = () => {
   return (
     <div id="what-i-do" className=" text-white ">
       <div
-        className="flex flex-col items-center justify-center bg-fixed min-h-screen bg-cover bg-no-repeat w-full"
+        className="flex flex-col items-center justify-center bg-fixed min-h-screen bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${about})` }}
       >
         <div className="mx-auto p-8">

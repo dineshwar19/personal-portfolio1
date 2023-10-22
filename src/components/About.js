@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="bg-gradient-to-t from-slate-900 to-black p-8 text-white w-screen"
+      className="bg-gradient-to-t from-slate-900 to-black p-8 text-white"
     >
       <div className="container text-white p-5 mx-auto flex flex-col items-center md:flex-row md:justify-evenly md:align-middle">
         <div className="mt-6 w-40 rounded-full overflow-hidden h-40 md:w-60 md:h-60">
