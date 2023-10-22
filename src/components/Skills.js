@@ -90,7 +90,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="bg-black text-white p-8">
+    <div id="skills" className="bg-black text-white p-8 w-screen">
       <h1 className="text-3xl font-bold mb-5 uppercase">Skills</h1>
       <hr className="border border-white mb-5 w-20 h-1 rounded-lg bg-white" />
       <div className="md:flex md:justify-around mb-10">
