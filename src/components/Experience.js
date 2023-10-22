@@ -51,7 +51,7 @@ const Experience = () => {
   return (
     <div id="experience" className="text-white bg-black relative">
       <div
-        className="bg-fixed bg-no-repeat bg-cover w-screen min-h-screen backdrop:blur-2xl"
+        className="bg-fixed bg-no-repeat bg-cover w-full min-h-screen backdrop:blur-2xl"
         style={{ backgroundImage: `url(${experience})` }}
       >
         <div className="p-10">
