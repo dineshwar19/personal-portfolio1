@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import experience from "../assets/experience.jpg";
+import large from "../assets/experience.jpg";
+import small from "../assets/experienceSmall.jpg";
 import snake from "../assets/works/snakeGame.png";
 import WeatherIndia from "../assets/works/WeatherIndia.png";
 import imageGallery from "../assets/works/ImageGallery.png";
@@ -47,12 +48,24 @@ const Experience = () => {
       url: "https://github.com/dineshwar19/WebDevelopment/tree/main/React%20Projects/todo-list",
     },
   ];
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const imgsrc = windowWidth >= 768 ? large : small;
   return (
     <div id="experience" className="text-white bg-black relative">
       <div
         className="bg-fixed bg-no-repeat bg-cover min-h-screen backdrop:blur-2xl"
-        style={{ backgroundImage: `url(${experience})` }}
+        style={{ backgroundImage: `url(${imgsrc})` }}
       >
         <div className="p-10">
           <div>

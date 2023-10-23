@@ -1,12 +1,26 @@
 import React from "react";
 import { FaLaptopCode, FaPaintBrush, FaCodeBranch } from "react-icons/fa";
-import about from "../assets/about.jpg";
+import large from "../assets/about.jpg";
+import small from "../assets/aboutSmall.jpg";
 const Passion = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const imgsrc = windowWidth >= 768 ? large : small;
   return (
     <div id="what-i-do" className=" text-white ">
       <div
         className="flex flex-col items-center justify-center bg-fixed min-h-screen bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${about})` }}
+        style={{ backgroundImage: `url(${imgsrc})` }}
       >
         <div className="mx-auto p-8">
           <h2 className="text-3xl font-bold mb-5 uppercase">What I Do</h2>
