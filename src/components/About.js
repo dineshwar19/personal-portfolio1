@@ -46,8 +46,9 @@ const About = () => {
           </p>
 
           <p className="bg-gradient-to-b from-slate-300 via-slate-200 to-slate-100 bg-clip-text text-transparent leading-loose mt-4 text-center ">
-            Beyond my academic pursuits, you can find me, simply enjoying my
-            time outdoors.
+            In addition to my academic pursuits, you can often find me savoring
+            moments of leisure outdoors, watching movies, and listening to
+            music.
           </p>
         </div>
       </div>
