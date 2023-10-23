@@ -45,7 +45,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="p-2 rounded"
+              className="p-2 rounded w-80"
               required
             />
 
@@ -55,7 +55,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
-              className="p-2 rounded"
+              className="p-2 rounded w-80"
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
               required
             />
@@ -65,7 +65,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Your Message"
-              className="p-2 rounded"
+              className="p-2 rounded w-80"
               required
             />
 
