@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import { FaLaptopCode, FaPaintBrush, FaCodeBranch } from "react-icons/fa";
 import large from "../assets/about.jpg";
 import small from "../assets/aboutSmall.jpg";

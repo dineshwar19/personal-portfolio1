@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import large from "../assets/experience.jpg";
 import small from "../assets/experienceSmall.jpg";
 import snake from "../assets/works/snakeGame.png";
+import linkedIn from "../assets/works/linkedIn-clone.png"
 import WeatherIndia from "../assets/works/WeatherIndia.png";
 import imageGallery from "../assets/works/ImageGallery.png";
 import todoList from "../assets/works/TodoList.png";
@@ -17,11 +18,12 @@ const Experience = () => {
   const works = [
     {
       id: 0,
-      title: "Snake Game",
-      work: "Programmed a classic Snake game using JavaScript. Highlighted problem-solving and game development abilities",
-      doneIn: "2022",
-      image: snake,
-      url: "https://github.com/dineshwar19/WebDevelopment/tree/main/Snake%20game",
+      title: "LinkedIn - clone",
+      work: "LinkedIn-clone is a React-based web application with a sleek and professional user interface, designed using Tailwind CSS. This frontend design project serves as a foundation for a future LinkedIn-like platform, with full functionalities to be added later through Node.js and MongoDB integration.",
+      doneIn: "2023",
+      image: linkedIn,
+      url: "https://github.com/dineshwar19/linkedin-clone",
+      website:"https://linkedin-clone-dineshwar.netlify.app/"
     },
     {
       id: 1,
@@ -46,6 +48,14 @@ const Experience = () => {
       doneIn: "2023 - October",
       image: todoList,
       url: "https://github.com/dineshwar19/WebDevelopment/tree/main/React%20Projects/todo-list",
+    },
+    {
+      id: 4,
+      title: "Snake Game",
+      work: "Programmed a classic Snake game using JavaScript. Highlighted problem-solving and game development abilities",
+      doneIn: "2022",
+      image: snake,
+      url: "https://github.com/dineshwar19/WebDevelopment/tree/main/Snake%20game",
     },
   ];
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -84,7 +94,7 @@ const Experience = () => {
           </p>
           <div className="mt-10 ">
             {selectedWork && (
-              <div className="absolute p-4 text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-30 ">
+              <div className=" flex justify-center p-4 text-center transform sticky top-10 bottom-10 z-10">
                 <DisplayWork
                   work={selectedWork}
                   onClose={() => setSelectedWork(null)}
