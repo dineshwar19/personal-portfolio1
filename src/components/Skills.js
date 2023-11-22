@@ -81,7 +81,7 @@ const Skills = () => {
     },
     {
       id: 2,
-      course: "Design and Analysis of Algorith",
+      course: "Design and Analysis of Algorithm",
     },
     {
       id: 3,
