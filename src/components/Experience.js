@@ -81,7 +81,7 @@ const Experience = ({ setSelectedWork }) => {
         `Local Storage Integration: Implemented local storage to persist the task list across browser sessions, enhancing user experience`,
         `Task Operations: Enabled users to add new tasks, mark tasks as complete with a double click, and delete tasks with a dedicated button.`,
       ],
-      tech: ["Reactjs", "JavaScript", "CSS3I"],
+      tech: ["Reactjs", "JavaScript", "CSS3"],
       doneIn: "Oct - 2023",
       image: todoList,
       url: "https://github.com/dineshwar19/WebDevelopment/tree/main/React%20Projects/todo-list",
