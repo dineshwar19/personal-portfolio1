@@ -1,11 +1,11 @@
 import React from "react";
-import html from "../assets/html.png.png";
-import css from "../assets/css.png.png";
-import js from "../assets/js.png.png";
-import java from "../assets/java.png.png";
-import react from "../assets/react.png.png";
-import tailwind from "../assets/tailwind.png.png";
-import git from "../assets/git.png.png";
+import html from "../assets/html.png.webp";
+import css from "../assets/css.png.webp";
+import js from "../assets/js.png.webp";
+import java from "../assets/java.png.webp";
+import react from "../assets/react.png.webp";
+import tailwind from "../assets/tailwind.png.webp";
+import git from "../assets/git.png.webp";
 import { FaTools } from "react-icons/fa";
 import { FaDiscourse } from "react-icons/fa";
 import { DiCode } from "react-icons/di";

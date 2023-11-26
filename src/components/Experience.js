@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import snake from "../assets/works/snakeGame.png";
-import linkedIn from "../assets/works/linkedIn-clone.png";
-import WeatherIndia from "../assets/works/WeatherIndia.png";
-import imageGallery from "../assets/works/ImageGallery.png";
-import todoList from "../assets/works/TodoList.png";
+import snake from "../assets/works/snakeGame.webp";
+import linkedIn from "../assets/works/linkedIn-clone.webp";
+import WeatherIndia from "../assets/works/WeatherIndia.webp";
+import imageGallery from "../assets/works/ImageGallery.webp";
+import todoList from "../assets/works/TodoList.webp";
 import { AiOutlineZoomIn } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
 import { BsFillPersonLinesFill } from "react-icons/bs";

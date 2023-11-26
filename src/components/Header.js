@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import large from "../assets/lander1.jpg";
-import small from "../assets/smallLander.jpg";
+import large from "../assets/lander1.webp";
+import small from "../assets/smallLander.webp";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -23,12 +23,17 @@ const Header = () => {
   return (
     <div className="bg-black relative" id="header">
       <div
-        class="bg-fixed min-h-screen bg-cover bg-no-repeat opacity-30 "
-        style={{ backgroundImage: `url(${imageSrc})` }}
+        className="bg-fixed min-h-screen bg-cover bg-no-repeat opacity-30 "
+        style={{
+          backgroundImage: `url(${imageSrc})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        loading="lazy"
       ></div>
       <div className="text-white flex flex-col items-center justify-center absolute inset-0 mb-28 gap-7">
         <div className="text-3xl uppercase font-name md:text-6xl">
-          Hi , I'm Dineshwar
+          Hi, I'm Dineshwar
         </div>
         <div className="font-name uppercase md:text-2xl">
           Aspiring Web Developer
