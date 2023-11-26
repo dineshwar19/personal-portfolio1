@@ -1,6 +1,7 @@
 import React from "react";
 import Dinesh from "../assets/Dinesh.jpeg";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const About = () => {
   return (
     <div
@@ -9,7 +10,7 @@ const About = () => {
     >
       <div className="container text-white p-5 mx-auto flex flex-col items-center md:flex-row md:justify-evenly md:align-middle">
         <div className="mt-6 w-40 rounded-full overflow-hidden h-40 md:w-60 md:h-60">
-          <img src={Dinesh} alt="Dineshwar's portrait" className="" />
+          <LazyLoadImage loading="lazy" effect="blur" src={Dinesh} alt="Dineshwar's portrait" />
         </div>
         <div className="md:w-1/2 px-4 font-name">
           <div className="flex flex-col ">

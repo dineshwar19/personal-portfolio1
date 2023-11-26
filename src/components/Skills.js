@@ -9,6 +9,8 @@ import git from "../assets/git.png.png";
 import { FaTools } from "react-icons/fa";
 import { FaDiscourse } from "react-icons/fa";
 import { DiCode } from "react-icons/di";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Skills = () => {
   const techs = [
@@ -90,7 +92,10 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="bg-black text-white p-8 ">
+    <div
+      id="skills"
+      className="bg-gradient-to-t from-slate-900 to-black  text-white p-8 "
+    >
       <h1 className="text-3xl font-bold mb-5 uppercase">Skills</h1>
       <hr className="border border-white mb-5 w-20 h-1 rounded-lg bg-white" />
       <div className="md:flex md:justify-around mb-10">
@@ -103,9 +108,11 @@ const Skills = () => {
             {techs.map((tech, index) => (
               <li
                 key={index}
-                className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${tech.style}`}
+                className={` cursor-pointer shadow-md transition duration-200 hover:scale-105 hover:animate-pulse py-2 rounded-lg ${tech.style}`}
               >
-                <img
+                <LazyLoadImage
+                  loading="lazy"
+                  effect="blur"
                   src={tech.src}
                   alt={tech.title}
                   className="w-20 md:w-28 mx-auto"

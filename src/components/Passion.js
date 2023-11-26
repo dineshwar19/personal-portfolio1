@@ -1,27 +1,8 @@
-import React,{useState, useEffect} from "react";
 import { FaLaptopCode, FaPaintBrush, FaCodeBranch } from "react-icons/fa";
-import large from "../assets/about.jpg";
-import small from "../assets/aboutSmall.jpg";
 const Passion = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  const imgsrc = windowWidth >= 768 ? large : small;
   return (
-    <div id="what-i-do" className=" text-white ">
-      <div
-        className="flex flex-col items-center justify-center bg-fixed min-h-screen bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${imgsrc})` }}
-      >
+    <div id="what-i-do" className=" text-white z-30 bg-gradient-to-b from-slate-900 to-black ">
+      
         <div className="mx-auto p-8">
           <h2 className="text-3xl font-bold mb-5 uppercase">What I Do</h2>
           <hr className="mb-5 w-20 h-1 bg-white" />
@@ -33,7 +14,7 @@ const Passion = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Web Development</h3>
               </div>
-              <p className="bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300 bg-clip-text text-transparent">
+              <p className="">
                 I'm passionate about web development. I create interactive and
                 responsive websites using HTML, CSS, and JavaScript. I'm also
                 skilled in popular frameworks like React and have experience
@@ -47,7 +28,7 @@ const Passion = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
               </div>
-              <p className="bg-gradient-to-b from-gray-400 via-slate-300 to-slate-200 bg-clip-text text-transparent">
+              <p className="">
                 I pay great attention to the user experience. I create clean and
                 user-friendly interfaces. My design skills complement my
                 development work, resulting in seamless and visually appealing
@@ -61,7 +42,7 @@ const Passion = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Version Control</h3>
               </div>
-              <p className="bg-gradient-to-b from-gray-300 via-slate-200 to-slate-100 bg-clip-text text-transparent">
+              <p className="">
                 I use Git and GitHub for version control. This helps me manage
                 code efficiently, collaborate with teams, and keep track of
                 changes. I'm experienced with branching, merging, and resolving
@@ -71,7 +52,6 @@ const Passion = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
