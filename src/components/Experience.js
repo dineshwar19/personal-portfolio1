@@ -57,6 +57,7 @@ const Experience = ({ setSelectedWork }) => {
       doneIn: "June - 2023",
       image: WeatherIndia,
       url: "https://github.com/dineshwar19/WebDevelopment/tree/main/React%20Projects/weatherapi",
+      website: "https://main--app-weather-sd.netlify.app/",
     },
     {
       id: 3,
@@ -70,7 +71,8 @@ const Experience = ({ setSelectedWork }) => {
       tech: ["Reactjs", "TailwindCSS", "Pixabay API", "JavaScript"],
       doneIn: "Aug - 2023",
       image: imageGallery,
-      url: "https://github.com/dineshwar19/WebDevelopment/tree/main/React%20Projects/image-gallery",
+      url: "https://github.com/dineshwar19/image-gallery",
+      website: "https://main--image-gallery19.netlify.app/",
     },
     {
       id: 4,
