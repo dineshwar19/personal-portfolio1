@@ -45,7 +45,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill />
         </>
       ),
-      link: "/Resume.pdf",
+      link: "/final_resume.pdf",
       download: true,
       style: "bg-white",
       color: "text-black",
@@ -62,8 +62,8 @@ const SocialLinks = () => {
             <a
               href={social.link}
               className={`flex justify-between items-center w-full ${social.color} font-semibold font-name`}
-              download={social.download}
               target="_blank"
+              // download={social.download}
               rel="noreferrer"
             >
               <>{social.child}</>
