@@ -8,12 +8,10 @@ import Passion from "./components/Passion";
 import SocialLinks from "./components/SocialLinks";
 import Contact from "./components/Contact";
 import SocialFooter from "./components/SocialFooter";
-import DisplayWork from "./components/DisplayWork";
-import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
+
 
 function App() {
-  const [selectedWork, setSelectedWork] = useState(null);
+
   return (
     <div>
       <NavBar />
@@ -22,18 +20,7 @@ function App() {
       <SocialLinks />
       <Passion />
       <Skills />
-      <Routes>
-        <Route path="*">
-          <Route
-            index
-            element={<Experience setSelectedWork={setSelectedWork} />}
-          />
-          <Route
-            path=":id"
-            element={<DisplayWork work={selectedWork} />}
-          />
-        </Route>
-      </Routes>
+      <Experience />
       <Contact />
       <SocialFooter />
     </div>

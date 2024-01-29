@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import snake from "../assets/works/snakeGame.webp";
 import linkedIn from "../assets/works/linkedIn-clone.webp";
 import WeatherIndia from "../assets/works/WeatherIndia.webp";
@@ -10,8 +11,9 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { Link } from "react-router-dom";
-const Experience = ({ setSelectedWork }) => {
+import DisplayWork from "./DisplayWork";
+const Experience = () => {
+  const [selectedWork, setSelectedWork] = useState(null);
   const works = [
     {
       id: 0,
@@ -106,7 +108,7 @@ const Experience = ({ setSelectedWork }) => {
   return (
     <div
       id="experience"
-      className="text-white bg-gradient-to-b from-slate-900 to-black  relative"
+      className={`text-white  relative ${selectedWork ? "bg-black bg-opacity-30 backdrop-blur-2xl" : "bg-gradient-to-b from-slate-900 to-black"}`}
     >
       <div className="p-10">
         <div>
@@ -137,13 +139,12 @@ const Experience = ({ setSelectedWork }) => {
                   alt={work.title}
                 />
                 <div className="flex justify-around py-5 bg-white opacity-0 w-0 group-hover:opacity-100 group-hover:w-full transition-w duration-500">
-                  <Link
-                    to={`${work.id}`}
+                  <button
                     className="text-black"
                     onClick={() => setSelectedWork(work)}
                   >
                     <AiOutlineZoomIn size={30} />
-                  </Link>
+                  </button>
 
                   <a href={work.url} className="text-black">
                     <BiCodeAlt size={30} />
@@ -153,6 +154,14 @@ const Experience = ({ setSelectedWork }) => {
             ))}
           </ul>
         </div>
+      </div>
+      <div className="relative">
+        {selectedWork && (
+          <DisplayWork
+            selectedWork={selectedWork}
+            onClose={() => setSelectedWork(null)}
+          />
+        )}
       </div>
       <a
         href="/Resume.pdf"

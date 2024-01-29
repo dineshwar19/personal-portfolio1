@@ -2,12 +2,19 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        128: "36rem",
+      },
+      width: {
+        128: "36rem",
+      },
+    },
     fontFamily: {
       signature: ["Pacifico"],
       name: ["Quicksand"],
       new: ["IBM Plex Serif"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
