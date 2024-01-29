@@ -108,7 +108,11 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className={`text-white  relative ${selectedWork ? "bg-black bg-opacity-30 backdrop-blur-2xl" : "bg-gradient-to-b from-slate-900 to-black"}`}
+      className={`text-white  relative ${
+        selectedWork
+          ? "bg-black bg-opacity-30 backdrop-blur-2xl"
+          : "bg-gradient-to-b from-slate-900 to-black"
+      }`}
     >
       <div className="p-10">
         <div>
@@ -126,7 +130,7 @@ const Experience = () => {
           JavaScript, React.js, and various APIs, to bring my ideas to life.
         </p>
         <div className="mt-10 ">
-          <ul className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-6 sm:px-0">
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-8 px-6 sm:px-0">
             {works.map((work, index) => (
               <li
                 key={index}
